@@ -1,0 +1,967 @@
+/*
+Theme Name: Loanly - Loan HTML5 Template.
+Author: Metropolitanthemes
+Author URL: https://themeforest.net/user/metrotpolitanthemes
+Version: 1.0.0
+*/
+
+@media (max-width: 1500px) {
+    .custom-img-left,
+    .custom-img-right {
+        display: none;
+    }
+    .side-lines.right-side {
+        right: calc(0% - 30px);
+    }
+    .side-lines {
+        left: calc(2% + 15px);
+    }
+}
+@media (max-width: 1200px) {
+    .gallery-style-2 .filter-gallery > ul {
+        display: block;
+        columns: 3;
+    }
+    /*navigation 2*/
+    .header-style-2 .main-navigation-style-2 .navigation nav>ul>.menu-item {
+        margin: 0 20px;
+    }
+    .header-style-2 .main-navigation-style-2 .logo {
+        margin: 10px 20px;
+    }
+    /*why choose us*/
+    .why-choose-us-bg,
+    .why-choose-us .layer {
+        width: calc(50% - 227px);
+    }
+    .about-style-2 .about-content-wrapper {
+        padding-right: 0;
+    }
+    .exp-cal2 .exp-cal2-loan {
+        padding: 25px;
+    }
+    .mb-lg-20 {
+        margin-bottom: 20px;
+    }
+    .mb-lg-30 {
+        margin-bottom: 30px;
+    }
+    .mb-lg-40 {
+        margin-bottom: 40px;
+    }
+    .mb-lg-80 {
+        margin-bottom: 80px;
+    }
+    .main-navigation-style-1 .main-menu>nav>ul>.menu-item>a {
+        font-size: 12px;
+    }
+    /*lw-about-section*/
+    .lw-about-primary-image-wrapper {
+        width: 330px;
+    }
+    .lw-about-secondary-image-wrapper {
+        top: 34px;
+        width: 201px;
+    }
+    .lw-about-square-box {
+        left: 59px;
+        top: -52px;
+        width: 265px;
+        height: 453px;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area .active-border {
+        min-height: 170px;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area .circle {
+        min-height: 160px;
+    }
+}
+@media (min-width: 993px) {
+    .menu-item-has-children>.sub-menu,
+    .menu-item-has-megamenu>.megamenu{
+        display: block!important;
+    }
+}
+@media (max-width: 992px) {
+    /*topbar*/
+    .topbar-style-1 .left-side .language-box{
+        white-space: normal;
+    }
+    .topbar-style-1 .left-side .language-box,
+    .topbar-style-1 .left-side p {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .topbar-style-1 .left-side .language-box .language:after{
+        display: none;
+    }
+    /*navigation 2*/
+    .header-style-2 .mobile-navigation-style-2 {
+        display: flex;
+    }
+    .header-style-2 .mobile-navigation-style-2 .logo {
+        margin: 10px 0px;
+    }
+    .header-style-2 .main-navigation-style-2 {
+        padding-top: 105px;
+    }
+    .header-style-2 .main-navigation-style-2 .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 15px;
+    }
+    /*navigation*/
+    .main-navigation-style-1 .navigation .mobile-logo,
+    .main-navigation-style-1 .navigation .hamburger-menu {
+        display: block;
+    }
+    .main-navigation-style-1 .navigation .mobile-logo {
+        margin: 10px auto;
+    }
+    .header-style-2 .main-navigation-style-2,
+    .main-navigation-style-1 .main-menu {
+        display: block;
+        width: 320px;
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        top: 0;
+        left: -320px;
+        transition: 0.5s all;
+        overflow: auto;
+        z-index: 100;
+    }
+    .header-style-2 .main-navigation-style-2.active,
+    .main-navigation-style-1 .main-menu.active {
+        left: 0;
+    }
+    .header-style-2 .main-navigation-style-2 .navigation nav>ul,
+    .main-navigation-style-1 .main-menu>nav>ul {
+        display: block;
+    }
+    .main-navigation-style-1.sticky .main-menu>nav>ul>.menu-item>a,
+    .main-navigation-style-1 .main-menu>nav>ul>.menu-item>a {
+        color: #888;
+        padding: 6px 15px;
+        border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
+    }
+    .header-style-2 .main-navigation-style-2 .navigation nav>ul>.menu-item {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .header-style-2.sticky .main-navigation-style-2 .navigation nav>ul>.menu-item>a,
+    .header-style-2 .main-navigation-style-2 .navigation nav>ul>.menu-item>a {
+        color: #888;
+        padding: 6px 15px;
+        border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
+        display: block;
+    }
+    .main-navigation-style-1 .navigation .main-menu .cta-btn {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+    .main-navigation-style-1 .navigation .main-menu .cta-btn a {
+        width: 100%;
+        background-color: #0070ba;
+    }
+    .header-style-2 .menu-item-has-megamenu>.megamenu,
+    .header-style-2 .menu-item-has-children>.sub-menu,
+    .main-navigation-style-1 .menu-item-has-megamenu .megamenu,
+    .main-navigation-style-1 .menu-item-has-children>.sub-menu {
+        left: 0;
+        visibility: visible;
+        position: relative;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: 0.3s;
+        width: 100%;
+        display: none;
+        padding: 0;
+    }
+    .main-navigation-style-1 .menu-item-has-children>.sub-menu.open{
+        display: block;
+    }
+    .main-navigation-style-1 .main-menu>nav>ul>.menu-item>a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-navigation-style-1 .menu-item-has-children:hover > a:after{
+        transform: none;
+    }
+    .main-navigation-style-1 .main-menu>nav>ul .menu-item.menu-item-has-megamenu.open>a,
+    .main-navigation-style-1 .main-menu>nav>ul .menu-item.menu-item-has-children.open>a {
+        background-color:#0070ba;
+        color: #fff;
+    }
+    .menu-item-has-children>a>.arrow,
+    .menu-item-has-megamenu>a>.arrow,
+    .menu-item-has-children>.sub-menu>li.menu-item-has-children>a>.arrow {
+        position: absolute;
+        transform: none;
+        right: 15px;
+    }
+    .main-navigation-style-1 .menu-item-has-children > .sub-menu:after,
+    .menu-item-has-children>.sub-menu:after {
+        display: none;
+    }
+    .menu-item-has-children .sub-menu li.menu-item-has-children>.sub-menu {
+        left: 0;
+        top: 0;
+        margin-bottom: 10px;
+    }
+    .header-style-2 .menu-item-has-megamenu>.megamenu {
+        padding: 20px 0;
+    }
+    .header-style-2 .menu-item-has-megamenu .megamenu .mega-menu-nav ul>.menu-item,
+    .header-style-2 .menu-item-has-megamenu .megamenu .mega-menu-nav h5,
+    .header-style-2 .menu-item-has-children .sub-menu>.menu-item {
+        padding: 0 15px;
+    }
+    .header-style-2 .menu-item-has-megamenu:hover>.megamenu {
+        left: 0px;
+    }
+    /*banner*/
+    .single-banner .banner-img-layer {
+        display: none;
+    }
+    /*intro*/
+    .intro-box .intro-wrapper {
+        padding: 40px 20px 50px;
+    }
+    .intro-box .intro-wrapper h4 {
+        font-size: 23px;
+    }
+    .intro-box .intro-wrapper a {
+        padding: 12px 37px;
+    }
+    .intro-service-3 .intro-widget .intro-widget-wrapper .intro-widget-block {
+        padding: 0 25px 40px;
+    }
+    .appoint-testi-style-2.style-3 .appointment-sec .left-side img {
+        padding-bottom: 40px;
+    }
+    /*About*/
+    .about-style-3 .about-img .video-button {
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    /*why choose us*/
+    .why-choose-us .tabs .nav-item .nav-link {
+        padding: 15px 10px 15px 20px;
+    }
+    .why-choose-us .tabs .nav-item .nav-link span {
+        padding-left: 5px;
+    }
+    .why-choose-us-bg,
+    .why-choose-us .layer {
+        width: calc(50% - 126px);
+    }
+    .why-choose-us-style-2 .square-tabs .nav-tabs {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .why-choose-us-style-2 .square-tabs .nav-tabs{
+        margin-bottom: 0;
+    }
+    .why-choose-us-style-2 .square-tabs .nav-tabs .nav-item {
+        width: 33.33%;
+        padding: 0 15px 20px;
+    }
+    .contact-us iframe {
+        height: 400px;
+    }
+    /*features*/
+    /*testimonials*/
+    /*footer*/
+    .footer-style-1 .footer-info {
+        padding-left: 0%;
+    }
+    .mb-md-20 {
+        margin-bottom: 20px;
+    }
+    .mb-md-30 {
+        margin-bottom: 30px;
+    }
+    .mb-md-40 {
+        margin-bottom: 40px;
+    }
+    .mb-md-80 {
+        margin-bottom: 80px;
+    }
+    .copyright .payment-logo {
+        justify-content: center;
+    }
+    .copyright p {
+        text-align: center;
+    }
+    .about-left-side-1 {
+        padding: 30px;
+    }
+    .download-app .app-img-side {
+        width: 100%;
+    }
+    .download-app .app-img-btm img {
+        margin: 0 auto;
+        display: block;
+    }
+    /*lw-about-section*/
+    .lw-about-primary-image-wrapper {
+        width: 556px;
+    }
+    .lw-about-secondary-image-wrapper {
+        top: 55px;
+        width: 300px;
+    }
+    .lw-about-square-box {
+        height: 700px;
+    }
+    .lw-about-section-right {
+        margin-top: 60px;
+    }
+    .lw-about-right-heading {
+        font-size: 30px;
+        max-width: 350px;
+    }
+    .lw-about-right-content {
+        margin-top: 30px;
+    }
+    .lw-about-right-content p:first-child {
+        margin: 26px 0;
+        font-size: 15px;
+        max-width: 530px;
+    }
+    /*lw-Pay-Process*/
+    .lw-process-steps {
+        margin-top: 20px;
+    }
+    .lw-pay-process-inner {
+        margin-top: 0;
+    }
+    .ln-loan-calculator .apply-links {
+        display: none;
+    }
+    /*exp-cal2*/
+    .exp-cal2:before {
+        width: 100%;
+    }
+    .user-dashboard-sec .dashboard-first-sec .left-side {
+        text-align: center;
+    }
+    .user-dashboard-sec .dashboard-first-sec .right-side ul {
+        justify-content: center;
+    }
+    .user-dashboard-sec .dashboard-first-sec .right-side ul>li {
+        margin: 0 8px;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area .active-border {
+        min-height: 330px;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area .circle {
+        min-height: 320px;
+    }
+    .ln-about-left-side .second-img,
+    .ln-about-left-side:after{
+        display: none;
+    }
+    .ln-about-left-side:before,
+    .ln-about-left-side .first-img{
+        width: calc(100% - 80px);
+    }
+    .ln-about-left-side:before{
+        left: 0;
+    }
+    .loan-faqs-leftside .support-card,
+    .loan-faqs-leftside .btn-submit-fill{
+      width: 100%;
+    }
+
+    .findratesec{
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+    .findrate-top{
+      padding-top: 80px;
+    }
+}
+@media (max-width: 767px) {
+  .sub-header h1{
+    font-size: 40px;
+  }
+  .slider{
+    height: auto;
+  }
+  .slider .banner-slider .banner-text h1{
+    font-size: 40px;
+  }
+  .side-lines{
+    display: none;
+  }
+  .slider #tsparticles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+    .user-dashboard-sec .dashboard-second-sec {
+        min-height: auto;
+    }
+    .user-dashboard-sec .dashboard-second-sec .right-side {
+        display: none;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area .active-border {
+        min-height: 240px;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area .circle {
+        min-height: 230px;
+    }
+    .gallery-style-2 .filter-gallery > ul {
+        columns: 2;
+    }
+    /*topbar*/
+    .topbar-style-1 .left-side .language-box,
+    .topbar-style-1 .left-side p {
+        font-size: 14px;
+    }
+    .topbar-style-1 .left-side {
+        justify-content: space-between;
+    }
+    .copyright-style-1 .social-media ul,
+    .topbar-style-1 .right-side>ul {
+        justify-content: center;
+    }
+    .topbar-style-1 .right-side>ul>li>a,
+    .topbar-style-1 .left-side .language-box {
+        border: none;
+    }
+    .header-style-1.style-3 {
+        position: relative;
+    }
+    .slider .transform-center {
+      top: auto;
+      left: auto;
+      right: auto;
+      transform: translate(0,0);
+      position: relative;
+      padding: 240px 0 120px;
+    }
+    .slider.video-banner .transform-center{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slider.video-banner .jarallax{
+      height: 570px;
+    }
+
+    /*banner*/
+    .single-banner>img,
+    .single-banner .overlay-bg-black {
+        width: 100%;
+    }
+    /*intro*/
+    .genmed-intro {
+        margin-top: 0;
+        padding: 80px 0 0;
+    }
+    .intro-box .intro-wrapper {
+        max-width: 100%;
+    }
+    /*why choose us*/
+    .lw-tab-section:before,
+    .lw-tab-section:after,
+    .lw-nav-tabs .nav-item .nav-link.active:after,
+    .style-3 .topbar-style-1 .right-side>ul>li.apointment-btn,
+    .section-header .section-btn,
+    .single-banner:before,
+    .why-choose-us .tabs .nav-item .nav-link.active:after {
+        display: none;
+    }
+    .why-choose-us-bg,
+    .why-choose-us .layer {
+        width: calc(100%);
+        height: 43%;
+    }
+    .why-choose-us .tabs {
+        margin-right: 0;
+    }
+    .why-choose-us .tabs ul {
+        columns: 2;
+    }
+    .why-choose-us .tabs ul li {
+        margin-bottom: 10px;
+    }
+    .why-choose-us .tabs .nav-item .nav-link {
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    /*Intro*/
+    .intro-service-box:hover .intro-service-box-inner .intro-content .link-btn,
+    .intro-service-box:hover {
+        margin: 0;
+    }
+    .intro-service-box .intro-service-box-inner {
+        padding: 40px 0;
+    }
+    /*blog*/
+    .blog-detail .social-media-box>ul,
+    .blog-detail .post-details-tags-social .tags-box {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .why-choose-us-style-2 .tab-inner .img-sec,
+    .why-choose-us-style-2 .tab-inner .img-sec img {
+        height: auto;
+    }
+    /*copyright*/
+    .copyright-style-1 p {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .mb-sm-20 {
+        margin-bottom: 20px;
+    }
+    .mb-sm-30 {
+        margin-bottom: 30px;
+    }
+    .mb-sm-40 {
+        margin-bottom: 40px;
+    }
+    .mb-sm-80 {
+        margin-bottom: 80px;
+    }
+    .LOANLY-advertisement .promo-text {
+        max-width: 550px;
+    }
+    /*lw-about-section*/
+    .lw-about-primary-image-wrapper {
+        width: 396px;
+    }
+    .lw-about-secondary-image-wrapper {
+        top: 55px;
+        width: 234px;
+    }
+    .lw-about-square-box {
+        height: 526px;
+    }
+    /*exp-cal2*/
+    .exp-cal2 .exp-cal-icon a {
+        position: relative;
+        top: 5px;
+        left: 45%;
+    }
+    .exp-cal2 .btn-first.btn-submit-fill {
+        margin-top: 20px;
+    }
+    .exp-cal2 .exp-cal2-content {
+        margin-top: 0px;
+    }
+    .exp-cal2 .exp-cal-icon,
+    .exp-cal .exp-cal-img p {
+        margin-bottom: 20px;
+    }
+    .exp-cal2 .exp-cal2-input {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 576px) {
+    .user-dashboard-sec .dashboard-second-sec-large .right-side,
+    .user-dashboard-sec .dashboard-second-sec-large .left-side {
+        display: block;
+        margin: 0 auto 40px;
+        text-align: center;
+        padding: 0;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .right-side .graph,
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area-text,
+    .user-dashboard-sec .dashboard-second-sec-large .right-side .graph-text,
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area {
+        max-width: 100%;
+        float: none;
+        flex-basis: 100%;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area .active-border {
+        min-height: 250px;
+        max-width: 250px;
+        margin: 0 auto 30px;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area{
+        margin-bottom: 30px;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .left-side .pie-chart-area .circle {
+        min-height: 240px;
+    }
+    .user-dashboard-sec .dashboard-second-sec-large .right-side:before {
+        display: none;
+    }
+    .side-lines {
+        display: none;
+    }
+    .about-us-sec .about-right-side-img:after {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        height: calc(100% - 40px);
+    }
+    .about-us-sec .about-right-side-img .transform-center {
+        right: 0;
+    }
+    .slider-banner .slide-item .content-wrapper h1,
+    .slider .banner-slider .banner-text h1,
+    .single-banner .content-wrapper h1 {
+        font-size: 50px;
+    }
+    .appoint-testi-style-2 .appointment-sec .right-side {
+        padding: 20px;
+    }
+    .about-counter .counter-box {
+        display: block;
+        text-align: center;
+    }
+    .about-counter .counter-box .counter-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    /*testimonials*/
+    .appoint-testi-style-2 .testimonials-sec .testimonials-inner {
+        display: block;
+    }
+    .appoint-testi-style-2 .testimonials-sec .testimonials-inner .testimonials-img {
+        margin: 0 auto;
+    }
+    .appoint-testi-style-2 .testimonials-sec .testimonials-inner .testimonials-text {
+        width: 100%;
+        text-align: center;
+    }
+    .about-us-sec .about-right-side-img img,
+    .about-style-3 .about-content-wrapper,
+    .about-style-2 .about-content-wrapper {
+        padding-right: 0;
+    }
+    .about-style-3 .about-img > img,
+    .about-style-2 .about-img>img,
+    .about-sec .doctor-img>img {
+        padding-right: 20px;
+    }
+    .about-style-3 .about-img:before {
+        top: -20px;
+        height: calc(50% + 20px);
+    }
+    .appoint-testi-style-2.style-3 .appointment-sec .left-side img {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .book-appointment .booking-form .book-form-wrapper {
+        padding: 40px 20px;
+    }
+    .about-us-sec .about-right-side-img img {
+        padding-top: 0;
+    }
+    /*why choose us*/
+    .why-choose-us-style-2 .square-tabs .nav-tabs {
+        margin: 0 -10px;
+    }
+    .why-choose-us-style-2 .square-tabs .nav-tabs .nav-item {
+        width: 100%;
+        padding: 0 10px 10px;
+    }
+    .comment-box .comments li article .comment-content .comment-meta .comment-meta-reply {
+        display: flex;
+        margin-top: 15px;
+    }
+    .comment-box .children {
+        padding-left: 0;
+    }
+    /*About page*/
+    .about-story .square-tabs .nav-tabs {
+        columns: 4
+    }
+    .about-story .tabs .nav .nav-item .nav-link {
+        padding: 15px;
+    }
+    .about-us-sec .about-right-side-img:before,
+    .square-tabs .nav-tabs:before {
+        display: none;
+    }
+    .square-tabs .nav-tabs .nav-item {
+        margin-bottom: 10px;
+    }
+    /*login register*/
+    .login-box .form-section {
+        padding: 50px 20px;
+    }
+    .login-box .form-section .form-bottm button {
+        justify-content: center;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .features-sec .video-button {
+        justify-content: center;
+    }
+    .mb-xs-20 {
+        margin-bottom: 20px;
+    }
+    .mb-xs-30 {
+        margin-bottom: 30px;
+    }
+    .mb-xs-40 {
+        margin-bottom: 40px;
+    }
+    .mb-xs-80 {
+        margin-bottom: 80px;
+    }
+    .why-choose-us-style-2 .tab-inner .content-box .list .grid-box {
+        border-width: 0px 0px 1px 0;
+    }
+    .why-choose-us-style-2 .tab-inner .content-box .list>.row>div:nth-child(3) .grid-box {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+    .why-choose-us-style-2 .tab-inner .content-box .list>.row>div:nth-child(4) .grid-box {
+        border-bottom: 0;
+    }
+    .clients-box .clients-wrapper .client-box {
+        width: 50.00%;
+    }
+    .appoint-testi-style-2 .appointment-sec .right-side:before {
+        display: none;
+    }
+    /*lw-about-section*/
+    .lw-about-secondary-image-wrapper,
+    .lw-about-square-box {
+        display: none;
+    }
+    .lw-about-primary-image-wrapper {
+        width: auto;
+    }
+    .lw-about-section {
+        margin-top: 40px;
+    }
+    .findratesec .input-form-box {
+        max-width: 100%;
+    }
+    .ln-about-left-side:after {
+        display: none;
+    }
+    .ln-about-left-side .first-img {
+        width: calc(100% - 40px);
+    }
+    .ln-about-left-side:before {
+        width: calc(100% - 40px);
+        left: 0px;
+        top: -35px;
+    }
+    .copyright .payment-logo{
+        display: block;
+        text-align: center;
+    }
+    .copyright .payment-logo span{
+        display: none;
+    }
+    .ln-type-payment-tabs>.nav-tabs{
+        padding: 0 15px;
+    }
+    .ln-type-payment-tabs>.nav-tabs>.nav-item>.nav-link,
+    .ln-type-payment-tabs>.nav-tabs>.nav-item {
+        width: 100%;
+        margin-bottom: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 460px) {
+    .user-info-tabs {
+        border-top: 0;
+    }
+    .user-dashboard-sec .dashboard-third-sec .tabs-sec .payment-activity-box {
+        display: block;
+    }
+    .user-dashboard-sec .dashboard-third-sec .tabs-sec .payment-activity-box .left-side {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .user-dashboard-sec .dashboard-third-sec .tabs-sec .payment-activity-box .right-side .price-box {
+        text-align: center;
+    }
+    .gallery-style-2 .filter-gallery > ul {
+        columns: 1;
+    }
+    /*topbar*/
+    .topbar-style-1 .left-side .language-box,
+    .topbar-style-1 .left-side p {
+        font-size: 10px;
+    }
+    .topbar-style-1 .right-side>ul>li>a {
+        padding: 7px 0;
+    }
+    /*navigation*/
+    .header-style-2 .main-navigation-style-2,
+    .main-navigation-style-1 .main-menu {
+        width: 260px;
+        left: -260px;
+    }
+    /*why choose us*/
+    .why-choose-us .tabs {
+        padding-bottom: 0;
+    }
+    .about-story .tab-inner .content-box .list ul,
+    .why-choose-us .tabs ul {
+        columns: 1;
+    }
+    .why-choose-us-bg,
+    .why-choose-us .layer {
+        display: none;
+    }
+    .why-choose-us .tabs .nav-item .nav-link {
+        background-color: #888;
+        color: #fff;
+    }
+    .why-choose-us .tabs h3 {
+        color: #333;
+    }
+    .why-choose-us-style-2 .tab-inner .content-box .list ul {
+        columns: 1;
+    }
+    .why-choose-us-style-2 .tab-inner .content-box .btns button {
+        padding: 12px 15px;
+    }
+    /*plan*/
+    .pricing-style-1 .price-box .price-wrapper .plan-text,
+    .pricing-style-1 .price-box .price-wrapper .heading-box {
+        padding-left: 20px;
+    }
+    /*blog*/
+    blockquote {
+        padding: 1rem;
+    }
+    /*coming soon*/
+    .coming-soon .main .counter .counter-box {
+        margin: 0 10px;
+    }
+    .coming-soon .main .counter .counter-box .inner-box {
+        width: 50px;
+        height: 50px;
+    }
+    /*service page*/
+    .service-page .service-image .service-text-wrapper {
+        padding: 0 20px;
+    }
+    /* LOANLY advertisement */
+    .promo-text h3 {
+        font-size: 28px;
+    }
+    /*About page*/
+    .square-tabs .nav-tabs {
+        display: block;
+        columns: 1;
+    }
+    /* Testimonial */
+    .testimonials-box .testimonials-wrapper .testimonials-inner {
+        position: relative;
+        padding: 0 0 0 60px;
+    }
+    .testimonials-box .testimonials-wrapper .testimonials-inner:before {
+        font-size: 48px;
+    }
+    /*lw-tabs*/
+    .lw-nav-tabs .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    .findratesec .input-form-box .input-group {
+        display: block;
+    }
+    .findratesec .input-form-box .input-group .btn-submit-fill{
+        width: 100%;
+    }
+    .findratesec .input-form-box .form-control-custom {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .findrate-top {
+        padding-top: 210px;
+    }
+    .findrate-bottom {
+        padding-bottom: 210px;
+    }
+    .ln-about-left-side .second-img {
+        height: 200px;
+        width: 180px;
+    }
+    .sub-header.overlapsec .section-padding {
+        padding-bottom: 80px;
+    }
+    .user-info-tabs,
+    .ln-loan-calculator-wrap {
+        padding: 0;
+        margin-top: 80px;
+        box-shadow: none;
+    }
+    .about-us-sec .about-left-side .signature-sec .signature-left,
+    .lw-about-sign-image{
+        width: 140px;
+        margin-left: 10px;
+    }
+    .book-appointment .appointment-sec .right-side,
+    .padding-40{
+        padding: 20px;
+    }
+    .about-left-side-1 .signature-sec{
+        display: block;
+        text-align: center;
+    }
+    .about-left-side-1 .signature-sec .signature-right{
+        margin-bottom: 10px;
+    }
+    .about-left-side-1 .signature-sec .signature-left{
+        width: 150px;
+        margin-left: 0;
+        padding-left: 0;
+        border:none;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 380px) {
+    .about-us-sec .about-right-side-img .transform-center {
+        top: 75%;
+    }
+    .promo-text .btn-group {
+        display: block;
+    }
+    .about-us-sec .about-left-side ul {
+        columns: 1;
+    }
+    .download-app .app-img-side .app-features ul li i {
+        position: relative;
+    }
+    .download-app .app-img-side .app-features ul li h5 {
+        padding-top: 20px;
+    }
+    .download-app .app-img-side .app-features ul li h5,
+    .download-app .app-img-side .app-features ul li p {
+        padding-left: 0;
+    }
+}
+@media (max-width: 350px) {
+    .promo-text .btn-group a:last-child {
+        margin-left: 0;
+    }
+    .appointment-sec h3 {
+        font-size: 32px;
+    }
+    .lw-about-right-list ul{
+        columns: 1;
+    }
+}
